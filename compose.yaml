@@ -1,0 +1,12 @@
+version: "3.1"
+services:
+  db:
+    image: postgres
+    container_name: webservices-db
+    restart: always
+    environment:
+      POSTGRES_DB: webservices
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: 2ZiPzxIQUZQxvvxoAgHdhreG2uCUb6s6gq
+    ports:
+      - "5432:5432"
